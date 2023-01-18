@@ -25,7 +25,7 @@ export default {
                     <li><a href="#">About</a></li>
                     <li><a href="#">Academics</a></li>
                     <li><a href="#">Courses</a></li>
-                    <li><a href="#">New</a></li>
+                    <li><a href="#">News</a></li>
                 </ul>
             </div>
         </div>
@@ -59,11 +59,12 @@ nav {
                 list-style-type: none;
 
                 a {
-                    text-decoration: none
+                    font-weight: bold;
+                    color: $blue-text-color;
+                    text-decoration: none;
                 }
             }
         }
     }
-
 }
 </style>
