@@ -9,7 +9,7 @@ export default {
 
     components: {
         AppNavbar,
-        AppJumbotron
+        AppJumbotron,
     },
 
     data() {
@@ -25,10 +25,10 @@ export default {
 
 <template>
     <AppNavbar />
-    <Jumbotron />
+    <AppJumbotron />
 </template>
 
-<style lang="scss" >
+<style lang="scss">
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 </style>
