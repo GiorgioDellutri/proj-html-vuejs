@@ -14,7 +14,6 @@ export default {
 </script>
 
 <template>
-
     <nav>
         <div class="nav-content wrapper d-flex justify-content-between ">
             <div class="img-container">
@@ -26,12 +25,11 @@ export default {
                     <li><a href="#">About</a></li>
                     <li><a href="#">Academics</a></li>
                     <li><a href="#">Courses</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="#">New</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
 </template>
 
 <style lang="scss" scoped>
@@ -40,7 +38,7 @@ export default {
 
 nav {
     height: 60px;
-    background-color: rebeccapurple;
+    background-color: $white-color;
 
     div.wrapper {
         height: 100%;
