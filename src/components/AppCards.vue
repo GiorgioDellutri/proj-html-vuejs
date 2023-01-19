@@ -20,7 +20,7 @@ export default {
 <template>
     <div class="card-container">
         <div class="single-card m-3 py-5 px-4 ">
-            <div class="img-container">
+            <div class="img-container mb-4">
                 <img :src="card.imgUrl" alt="svg card">
             </div>
             <p class="title">{{ card.title }}</p>
@@ -41,13 +41,17 @@ div.single-card {
 
     div.img-container {
         margin: 0 auto;
-        height: 60px;
-        width: 60px;
+        height: 55px;
+        width: 55px;
     }
 
     p.title {
         font-size: 1.4rem;
         font-weight: bold;
+    }
+
+    p.text {
+        font-size: 1.1rem;
     }
 }
 </style>
