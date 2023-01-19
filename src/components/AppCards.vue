@@ -8,10 +8,7 @@ export default {
 
         }
     },
-    data() {
-        return {
-        }
-    },
+
     methods: {
         getImagePath(imgPath) {
             return new URL(`../assets/svg/${imgPath}`, import.meta.url).href
