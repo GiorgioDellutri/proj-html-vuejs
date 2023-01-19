@@ -66,5 +66,19 @@ export const store = reactive({
             marker: '',
             more: 'Read more'
         },
+    ],
+    campusImages: [
+        {
+            imgUrl: 'gallery-3-3.jpg',
+        },
+        {
+            imgUrl: 'news-3-2 -resized.jpg',
+        },
+        {
+            imgUrl: 'gallery-1-3.jpg',
+        },
+        {
+            imgUrl: 'gallery-2-3.jpg',
+        },
     ]
 });
