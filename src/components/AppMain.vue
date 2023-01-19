@@ -1,6 +1,8 @@
 <script>
 import { store } from '../store';
 import AppCards from '../components/AppCards.vue';
+import AppCardsCourses from '../components/AppCardsCourses.vue';
+
 
 
 export default {
@@ -8,6 +10,7 @@ export default {
 
     components: {
         AppCards,
+        AppCardsCourses,
     },
 
     data() {
@@ -42,10 +45,14 @@ export default {
                 </div>
             </section>
             <section class="recent-courses">
-                <h2 class="partners-title mt-5">Recent Courses</h2>
+                <h2 class="partners-title mt-5 mb-4">Recent Courses</h2>
                 <p>Whether you're considering a foundation cpourse or an undergraduate degree master's or a PhD,
                     academics is a place where students thrive</p>
             </section>
+            <div class="d-flex">
+                <AppCardsCourses v-for="(singlecard) in store.courses" :card="singlecard" />
+            </div>
+
         </div>
     </div>
 </template>
@@ -60,6 +67,7 @@ div.container-fluid {
 
     div.wrapper {
         text-align: center;
+        color: $blue-text-color;
 
         p.partners-title {
             padding: 0 6rem;
@@ -112,6 +120,18 @@ div.container-fluid {
             }
 
             span {
+                font-size: 1.2rem;
+            }
+        }
+
+        section.recent-courses {
+            padding: 0 11rem;
+
+            h2 {
+                font-weight: bold;
+            }
+
+            p {
                 font-size: 1.2rem;
             }
         }
