@@ -3,6 +3,7 @@ import { store } from '../store';
 import AppCards from '../components/AppCards.vue';
 import AppCardsCourses from '../components/AppCardsCourses.vue';
 import AppUpcomingEvents from './AppUpcomingEvents.vue';
+import AppCampusImages from './AppCampusImages.vue';
 
 export default {
     name: 'AppMain',
@@ -11,6 +12,7 @@ export default {
         AppCards,
         AppCardsCourses,
         AppUpcomingEvents,
+        AppCampusImages
     },
 
     data() {
@@ -57,7 +59,7 @@ export default {
                     With the support of caring <span class="underline-red">advisor,professor, and staff</span> i was
                     able to
                     thrive in courses,
-                    gain recognition through scholarships, and finish <span class="bold-text">with confidance in
+                    gain recognition through scholarships, and finish <span class="bold-text">with confidence in
                         my </span> <span class="underline-red">@academics</span> <span
                         class="bold-text">abilities</span>""
                 </p>
@@ -71,7 +73,9 @@ export default {
             <div class="d-flex justify-content-center">
                 <AppCardsCourses v-for="(singlecard) in store.feddback" :card="singlecard" />
             </div>
-
+        </div>
+        <div class="d-flex campus-images-container">
+            <AppCampusImages v-for="(singlecard) in store.campusImages" :card="singlecard" />
         </div>
     </div>
 </template>
@@ -179,6 +183,10 @@ div.container-fluid {
                 }
             }
         }
+    }
+
+    div.campus-images-container {
+        margin-top: 6rem;
     }
 }
 </style>
