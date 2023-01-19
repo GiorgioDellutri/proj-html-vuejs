@@ -18,21 +18,27 @@ export const store = reactive({
             text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries.'
         },
     ],
-    prova: [
+    courses: [
         {
-            img: '/src/assets/img/course-1-2.jpg',
-            title: 'dasdasdas',
-            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+            imgUrl: '/src/assets/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg',
+            price: 'Free',
+            title: 'UI Animation using Sketch 3, Principle App, and Flinto',
+            text: 'This online photography course will teach you how to take amazing images and even sell...',
+            by: 'Coursed by: University'
         },
         {
-            imgUrl: './assets/svg/svg-2.svg',
-            title: 'dasdasdas',
-            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+            imgUrl: '/src/assets/img/course-1-2.jpg',
+            price: 'Free',
+            title: 'The Ultimate Drawing Course-Beginner to Advanced',
+            text: 'This online photography course will teach you how to take amazing images and even sell...',
+            by: 'Coursed by: University'
         },
         {
-            imgUrl: './assets/svg/svg-3.svg',
-            title: 'Life asdasd',
-            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+            imgUrl: '/src/assets/img/william-thomas-ny6tO4ItOEY-unsplash.jpg',
+            price: 'Free',
+            title: 'Your Complete Guide to Photography',
+            text: 'This online photography course will teach you how to take amazing images and even sell...',
+            by: 'Coursed by: University'
         },
     ]
 });
