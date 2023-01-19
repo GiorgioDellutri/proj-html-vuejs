@@ -110,13 +110,15 @@ div.container-fluid {
 
         div.students p.number-students {
             display: inline-block;
-            height: 60px;
+            height: 70px;
             color: $orange-text-color;
             background-image: url(../assets/img/counter-shape-1-1-1.png);
             background-repeat: no-repeat;
             background-size: 65%;
             background-position: top left;
         }
+
+
 
         div.courses p.number-courses {
 
