@@ -1,4 +1,5 @@
 <script >
+import AppFooterTop from './components/AppFooterTop.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 
@@ -6,6 +7,7 @@ export default {
   components: {
     AppHeader,
     AppMain,
+    AppFooterTop
   }
 }
 
@@ -19,7 +21,7 @@ export default {
     <AppMain />
   </main>
   <footer>
-
+    <AppFooterTop />
   </footer>
 </template>
 
