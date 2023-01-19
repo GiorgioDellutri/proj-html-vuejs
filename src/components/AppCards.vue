@@ -13,15 +13,18 @@ export default {
         }
     },
     methods: {
+        getImagePath(imgPath) {
+            return new URL(`../assets/svg/${imgPath}`, import.meta.url).href
+        }
     }
 }
 </script>
 
 <template>
     <div class="card-container">
-        <div class="single-card m-3 py-5 px-4 ">
+        <div class="single-card m-2 py-5 px-4 ">
             <div class="img-container mb-4">
-                <img :src="card.imgUrl" alt="svg card">
+                <img :src="getImagePath(card.imgUrl)" alt="svg card">
             </div>
             <p class="title">{{ card.title }}</p>
             <p class="text mb-5">{{ card.text }}</p>
