@@ -40,5 +40,31 @@ export const store = reactive({
             text: 'This online photography course will teach you how to take amazing images and even sell...',
             by: 'Coursed by: University'
         },
+    ],
+    feddback: [
+        {
+            imgUrl: 'news-3-2.jpg',
+            role: ' Admin',
+            type: 'University',
+            title: 'Peer pressure changes how teens tackle inequality',
+            marker: '',
+            more: 'Read more'
+        },
+        {
+            imgUrl: 'news-2-2.jpg',
+            role: 'Admin',
+            type: 'Education',
+            title: "Lewisham Live Mixtape celebrates borough's",
+            marker: '',
+            more: 'Read more'
+        },
+        {
+            imgUrl: 'news-1-2.jpg',
+            role: 'Admin',
+            type: 'Education',
+            title: "Turner Prize winner's work to open Gold on Film festival",
+            marker: '',
+            more: 'Read more'
+        },
     ]
 });
