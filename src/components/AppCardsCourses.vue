@@ -33,14 +33,16 @@ export default {
 <template>
     <div class="card-container">
         <div class="single-card  m-3 ">
-            <div class="img-container" :style="imgContainerStyle">
-            </div>
+            <div class="img-container" :style="imgContainerStyle"></div>
             <div class="wrapper-text">
+                <span class="role" v-if="card.role"><i class="fas fa-user"></i> {{ card.role }}</span>
+                <span class="type" v-if="card.type"><i class="fas fa-folder"></i> {{ card.type }}</span>
                 <p class="price">{{ card.price }}</p>
-                <div class="marker"></div>
                 <p class="title">{{ card.title }}</p>
                 <p class="text mb-4">{{ card.text }}</p>
                 <p class="by">{{ card.by }}</p>
+                <div class="marker" v-if="card.more"></div>
+                <span v-if="card.more">{{ card.more }}<i class="fa-solid fa-chevron-right"></i></span>
             </div>
         </div>
     </div>
@@ -52,7 +54,7 @@ export default {
 
 div.single-card {
     text-align: left;
-    height: 500px;
+
     background-color: $white-color ;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -72,12 +74,22 @@ div.single-card {
             color: $dark-red-text-color;
             margin: 0;
         }
+
+        span.role,
+        span.type {
+            margin-right: 2rem;
+        }
+
+        div.marker {
+            height: 5px;
+            width: 50px;
+            background-color: $dark-red-text-color;
+            margin: 1.5rem 0 3rem 0;
+        }
     }
 
-
-
     div.img-container {
-        width: 100%;
+        width: 334.667px;
         height: 193px;
 
         img {
