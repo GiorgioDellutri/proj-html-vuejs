@@ -14,12 +14,14 @@ export default {
         }
     },
     methods: {
+        getImagePath(imgPath) {
+            return new URL(`../assets/img/${imgPath}`, import.meta.url).href
+        }
     },
     computed: {
         imgContainerStyle() {
-            console.log(this.card.imgUrl);
             return {
-                'background-image': `url(${this.card.imgUrl})`,
+                'background-image': `url(${this.getImagePath(this.card.imgUrl)})`,
                 'background-size': 'cover',
                 'background-repet': 'no-repet'
             }
@@ -50,8 +52,7 @@ export default {
 
 div.single-card {
     text-align: left;
-    width: 338px;
-    height: 490px;
+    height: 500px;
     background-color: $white-color ;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
