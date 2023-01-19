@@ -16,7 +16,7 @@ export default {
         <div class="jumbo-content">
             <h1>Professional Development For <br> Coaches And Leaders</h1>
             <div class="jumbo-button">
-                <h5>Learn more</h5>
+                <h5 class="m-0">Learn more</h5>
             </div>
         </div>
     </div>
