@@ -9,10 +9,7 @@ export default {
 
         }
     },
-    data() {
-        return {
-        }
-    },
+
     methods: {
         getImagePath(imgPath) {
             return new URL(`../assets/img/${imgPath}`, import.meta.url).href
@@ -23,7 +20,7 @@ export default {
             return {
                 'background-image': `url(${this.getImagePath(this.card.imgUrl)})`,
                 'background-size': 'cover',
-                'background-repet': 'no-repet'
+                'background-repeat': 'no-repeat'
             }
         }
     }
@@ -81,7 +78,7 @@ div.single-card {
         }
 
         div.marker {
-            height: 5px;
+            height: 3px;
             width: 50px;
             background-color: $dark-red-text-color;
             margin: 1.5rem 0 3rem 0;
