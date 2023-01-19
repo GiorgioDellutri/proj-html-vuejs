@@ -5,17 +5,17 @@ export const store = reactive({
         {
             imgUrl: "/src/assets/svg/svg-0.svg",
             title: 'Online Coaching',
-            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries.'
         },
         {
             imgUrl: "/src/assets/svg/svg-1.svg",
             title: 'Consultation',
-            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries.'
         },
         {
             imgUrl: "/src/assets/svg/svg-2.svg",
             title: 'Life Programs',
-            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries'
+            text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industries.'
         },
     ],
     prova: [
