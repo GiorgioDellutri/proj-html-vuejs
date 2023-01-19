@@ -18,6 +18,9 @@ export default {
   <main>
     <AppMain />
   </main>
+  <footer>
+
+  </footer>
 </template>
 
 <style lang="scss" >
