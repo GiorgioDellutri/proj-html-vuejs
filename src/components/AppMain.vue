@@ -4,15 +4,13 @@ import AppCards from '../components/AppCards.vue';
 import AppCardsCourses from '../components/AppCardsCourses.vue';
 import AppUpcomingEvents from './AppUpcomingEvents.vue';
 
-
-
 export default {
     name: 'AppMain',
 
     components: {
         AppCards,
         AppCardsCourses,
-        AppUpcomingEvents
+        AppUpcomingEvents,
     },
 
     data() {
@@ -65,15 +63,15 @@ export default {
                 </p>
             </div>
             <AppUpcomingEvents />
-
-
-
-
             <section class="blogs title-cards">
                 <h2 class="partners-title mt-5 mb-4 ">Latest From Our Blogs</h2>
                 <p>Whether you're considering a foundation course or an undergraduate degree master's or a PhD,
                     academics is a place where students thrive.</p>
             </section>
+            <div class="d-flex justify-content-center">
+                <AppCardsCourses v-for="(singlecard) in store.feddback" :card="singlecard" />
+            </div>
+
         </div>
     </div>
 </template>
