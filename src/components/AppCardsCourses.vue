@@ -37,7 +37,7 @@ export default {
                 <p class="price">{{ card.price }}</p>
                 <div class="marker"></div>
                 <p class="title">{{ card.title }}</p>
-                <p class="text mb-5">{{ card.text }}</p>
+                <p class="text mb-4">{{ card.text }}</p>
                 <p class="by">{{ card.by }}</p>
             </div>
         </div>
@@ -51,7 +51,7 @@ export default {
 div.single-card {
     text-align: left;
     width: 338px;
-    height: 510px;
+    height: 490px;
     background-color: $white-color ;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -67,9 +67,10 @@ div.single-card {
             font-size: 1.1rem;
         }
 
-
-
-
+        p.by {
+            color: $dark-red-text-color;
+            margin: 0;
+        }
     }
 
 
