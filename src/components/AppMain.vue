@@ -2,6 +2,7 @@
 import { store } from '../store';
 import AppCards from '../components/AppCards.vue';
 import AppCardsCourses from '../components/AppCardsCourses.vue';
+import AppUpcomingEvents from './AppUpcomingEvents.vue';
 
 
 
@@ -11,6 +12,7 @@ export default {
     components: {
         AppCards,
         AppCardsCourses,
+        AppUpcomingEvents
     },
 
     data() {
@@ -52,7 +54,7 @@ export default {
             <div class="d-flex justify-content-center">
                 <AppCardsCourses v-for="(singlecard) in store.courses" :card="singlecard" />
             </div>
-            <div class="feedback-container my-5 ">
+            <div class="feedback-container  ">
                 <p class="feedback-text"> Academics was committed to my success from the moment Iattended an Open House.
                     With the support of caring <span class="underline-red">advisor,professor, and staff</span> i was
                     able to
@@ -62,6 +64,7 @@ export default {
                         class="bold-text">abilities</span>""
                 </p>
             </div>
+            <AppUpcomingEvents />
 
 
 
@@ -156,6 +159,7 @@ div.container-fluid {
         }
 
         div.feedback-container {
+            margin: 6rem 0;
             text-align: center;
             padding: 0 2rem;
 
