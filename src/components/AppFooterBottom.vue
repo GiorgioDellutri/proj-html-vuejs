@@ -7,7 +7,7 @@ export default {
 
 <template>
     <div class="no-wrapped-container">
-        <div class="wrapper footer-bottom-content d-flex justify-content-between">
+        <div class="wrapper footer-bottom-content d-flex justify-content-between align-items-center p-2">
             <p><i class="fa-solid fa-copyright"></i>Copyright 2020 tophive. All Rights Reserved.</p>
             <div class="links">
                 <ul class="d-flex justify-content-between">
@@ -29,6 +29,7 @@ export default {
 
 div.no-wrapped-container {
     background-color: $dark-blue-background-color;
+    height: 100%;
 
     div.footer-bottom-content {
 
@@ -37,13 +38,18 @@ div.no-wrapped-container {
         p,
         li {
             font-size: .8rem;
+            margin: 0;
         }
 
-        ul li {
-            padding: 0 .5rem 0 .5rem;
+        ul {
+            margin: 0;
 
-            a {
-                color: $light-blue-gray-text-color
+            li {
+                padding: 0 .5rem 0 .5rem;
+
+                a {
+                    color: $light-blue-gray-text-color
+                }
             }
         }
     }
