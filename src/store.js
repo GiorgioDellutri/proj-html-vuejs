@@ -21,21 +21,21 @@ export const store = reactive({
     courses: [
         {
             imgUrl: 'bruce-mars-FWVMhUa_wbY-unsplash.jpg',
-            price: 'Free',
+            price: '$150.00',
             title: 'UI Animation using Sketch 3, Principle App, and Flinto',
             text: 'This online photography course will teach you how to take amazing images and even sell...',
             by: 'Coursed by: University'
         },
         {
             imgUrl: 'course-1-2.jpg',
-            price: 'Free',
+            price: '$55.00',
             title: 'The Ultimate Drawing Course-Beginner to Advanced',
             text: 'This online photography course will teach you how to take amazing images and even sell...',
             by: 'Coursed by: University'
         },
         {
             imgUrl: 'william-thomas-ny6tO4ItOEY-unsplash.jpg',
-            price: 'Free',
+            price: '$32.00',
             title: 'Your Complete Guide to Photography',
             text: 'This online photography course will teach you how to take amazing images and even sell...',
             by: 'Coursed by: University'
