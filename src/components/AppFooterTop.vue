@@ -24,7 +24,8 @@ export default {
                     <a class="bg-danger d-flex align-items-center" href="#">Register</a>
                 </div>
                 <div class="subscribe-info ">
-                    <p><span class="underline-red">Insights is Picwik</span> University's thought leadership
+                    <p><a href="#"><span class="underline-red">Insights is Picwik</span></a> University's thought
+                        leadership
                         publication for sharing knowledge on management, technology and innovation</p>
                     <span><a href="">Take me there</a><i class="fa-solid fa-chevron-right"></i></span>
                 </div>
