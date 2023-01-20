@@ -62,8 +62,14 @@ nav {
                     font-weight: bold;
                     color: $blue-text-color;
                     text-decoration: none;
+
+                    &:hover {
+                        color: $dark-red-text-color;
+                    }
                 }
+
             }
+
         }
     }
 }
