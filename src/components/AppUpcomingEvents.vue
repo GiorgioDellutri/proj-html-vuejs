@@ -18,13 +18,16 @@ export default {
                 </div>
                 <div class="info-container">
                     <p>Princeton offers admission information sessions and student-led tours to campus visitors</p>
-                    <span class="learn-more">Learn more</span><span><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="learn-more"><a href="#"> Learn more <i
+                                class="fa-solid fa-chevron-right"></i></a></span>
                     <p>Admission information sessions and student-led tours to campus visitors</p>
-                    <span class="learn-more">Learn more</span><span><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="learn-more"><a href="#"> Learn more <i
+                                class="fa-solid fa-chevron-right"></i></a></span>
                 </div>
                 <div class="maps-location text-center">
-                    <span class="maps"><i class="fa-regular fa-map"></i> Event Location</span>
-                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="maps"><a href="#"><i class="fa-regular fa-map"></i> Event Location</a><i
+                            class="fa-solid fa-chevron-right"></i></span>
+
                 </div>
             </div>
         </div>
@@ -51,7 +54,7 @@ div.video {
         background-color: $white-color;
 
         i {
-            color: $dark-red-background-color;
+            color: $dark-light-blue-background-color;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -76,7 +79,7 @@ div.banner-event {
         padding: 1.5rem 2rem;
         margin: 0 auto;
         height: 90px;
-        background-color: $dark-red-background-color;
+        background-color: $dark-light-blue-background-color;
 
         h3 {
             margin: 0;
@@ -87,6 +90,14 @@ div.banner-event {
     div.info-container {
         padding: 2rem 9rem 2rem 2.8rem;
         font-weight: bold;
+
+        span.learn-more {
+            margin-left: .3rem;
+
+            a {
+                color: $dark-light-blue-background-color;
+            }
+        }
 
         p {
             font-size: 1.1rem;
@@ -112,14 +123,23 @@ div.banner-event {
 
     div.maps-location {
 
+        a {
+            color: $dark-blue-background-color;
+        }
+
         span.maps i.fa-map {
             margin-right: .2rem;
         }
 
         span i.fa-chevron-right {
-            font-size: .8rem;
             margin-left: .2rem;
         }
+
+        i.fa-map,
+        i.fa-chevron-right {
+            font-size: .8rem;
+        }
+
     }
 }
 </style>
