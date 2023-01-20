@@ -179,7 +179,7 @@ div.container-fluid {
                 }
 
                 span.underline-red {
-                    color: $red-text-color;
+                    color: $dark-blue-text-color;
                     text-decoration: underline;
                     font-weight: bolder;
                 }
