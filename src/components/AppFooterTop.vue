@@ -43,7 +43,6 @@ export default {
 div.footer-top-container {
     color: $white-color;
     background-color: $deep-blue-background-color;
-    height: 1000px;
 
     div.subscribe-section {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -83,7 +82,6 @@ div.footer-top-container {
     p {
         color: $light-blue-gray-text-color;
         padding-right: 2rem;
-
     }
 
     span.underline-red {
@@ -91,5 +89,6 @@ div.footer-top-container {
         text-decoration: underline $white-color;
         font-weight: bolder;
     }
+
 }
 </style>
