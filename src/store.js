@@ -85,7 +85,7 @@ export const store = reactive({
         {
             title: 'Contacts Us',
             address: ' 900 Wood Street, MI New York 48607',
-            phoneNumber: '+57 345678000-09',
+            phone: '+57 345678000-09',
             email: 'info@example.com',
             marker: '',
             more: 'Read more'
