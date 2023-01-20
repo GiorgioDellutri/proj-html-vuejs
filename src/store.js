@@ -80,5 +80,38 @@ export const store = reactive({
         {
             imgUrl: 'gallery-2-3.jpg',
         },
-    ]
+    ],
+    footerContacts: [
+        {
+            title: 'Contacts Us',
+            address: ' 900 Wood Street, MI New York 48607',
+            phoneNumber: '+57 345678000-09',
+            email: 'info@example.com',
+            marker: '',
+            more: 'Read more'
+        },
+        {
+            title: 'Support Us',
+            link_1: 'Privacy',
+            link_2: 'Terms',
+            link_3: "Cookie Policy",
+            link_4: 'Sitemap',
+        },
+        {
+            title: 'Explore',
+            link_1: 'Accommodation',
+            link_2: 'Arts Academics',
+            link_3: "Central Service",
+            link_4: 'Conference and Events',
+            link_5: 'Food and Driks'
+        },
+        {
+            title: 'Visit',
+            link_1: 'Admission',
+            link_2: 'Contact Us',
+            link_3: "FAQs",
+            link_4: 'Request Information',
+            link_5: 'Privacy Notice'
+        },
+    ],
 });
