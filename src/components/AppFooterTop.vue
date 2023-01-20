@@ -1,29 +1,36 @@
 <script>
 import { store } from '../store';
+import AppFooterLinks from './AppFooterLinks.vue';
 
 export default {
-    name: 'AppFooterTop',
+    name: "AppFooterTop",
     data() {
         return {
             store,
-        }
+        };
     },
+    components: {
+        AppFooterLinks
+    }
 }
 </script>
 
 <template>
     <div class="footer-top-container p-5">
         <div class="wrapper">
-            <div class="subscribe-section d-flex justify-content-between align-items-center">
+            <div class="subscribe-section d-flex justify-content-between align-items-center mb-5">
                 <div class="input-container d-flex mb-3">
                     <input class="mail p-3" type="text" placeholder="Subscribe to our newletter" />
                     <a class="bg-danger d-flex align-items-center" href="#">Register</a>
                 </div>
-                <div class="subscribe-info">
+                <div class="subscribe-info ">
                     <p><span class="underline-red">Insights is Picwik</span> University's thought leadership
                         publication for sharing knowledge on management, technology and innovation</p>
                     <span><a href="">Take me there</a><i class="fa-solid fa-chevron-right"></i></span>
                 </div>
+            </div>
+            <div class="d-flex justify-content-center links-container">
+                <AppFooterLinks v-for="(linksComponent) in store.footerContacts" :card="linksComponent" />
             </div>
         </div>
     </div>
@@ -37,8 +44,6 @@ div.footer-top-container {
     color: $white-color;
     background-color: $deep-blue-background-color;
     height: 1000px;
-
-
 
     div.subscribe-section {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
