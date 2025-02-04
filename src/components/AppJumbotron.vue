@@ -26,7 +26,7 @@ export default {
         <div class="jumbo-content">
             <h1 ref="typedHeading"></h1>
             <div class="jumbo-button" v-if="showButton" v-bind:class="{ 'fade-in-bottom': showButton }">
-                <h5 class="m-0">Learn more</h5>
+                <a href="#"><h5 class="m-0">Learn more</h5></a>
             </div>
         </div>
     </div>
@@ -77,5 +77,13 @@ div.jumbotron-container {
 
 .typed-cursor {
     visibility: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: $dark-red-background-color;
 }
 </style>
